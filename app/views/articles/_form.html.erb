@@ -21,7 +21,20 @@
     <%= form.text_area :body %>
   </div>
 
+  <div class="field">
+    <%= form.input :photo, as: :file %>
+  </div>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
+  <%= f.input :photo, as: :file %>
+<% end %>
+
+<%= simple_form_for(article) do |f| %>
+  <!-- [...] -->
+  <%= f.input :photo, as: :file %>
+  <!-- [...] -->
 <% end %>
